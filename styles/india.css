@@ -1,0 +1,152 @@
+*
+{
+    font-family: sans-serif;  
+}
+#latest
+{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ #latestnews
+ {
+    margin-top: 50px;;
+
+ }
+ #latestnews>h2,p{
+    margin-left: 25px;
+ }
+
+.news
+{
+    width:20%;
+    height: 400px;
+    /* border:1px solid black; */
+}
+#div1
+{
+  width:22%;
+  height: auto;
+
+}
+#div2
+{
+    width:44%;
+    height: auto;
+}
+#div3
+{
+    width:26%
+}
+#imgn {
+    width: 144px;
+    height: 109px;
+    margin-right: 10px;
+    /* border-radius: 10px; */
+}
+#p{
+    margin-left: 154px;
+    color:#989898
+}
+
+#div {
+    display: flex;
+    /* margin-top: 15px; */
+    /* padding: 20px; */
+    background-color: white;
+    /* border: 1px solid black; */
+    /* width: 44%; */
+}
+#div21{
+ /* border: 1px solid black; */
+ width:100%;
+ margin-top: 20px;
+ padding: 10px;
+ box-sizing: border-box;
+ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#head3
+{
+    color:#2e2e2e;
+    padding: 20px;
+
+}
+#head3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#div4
+{
+    margin-top: 10px;
+    display: flex;
+    font-size: 12px;
+    padding: ;
+}
+#imgn1
+{
+    width: 80px;
+   height: 60px;
+   margin-right: 5px;
+
+}
+#imgn5
+{
+    width: 70%;
+    height: 100px;
+    margin-left: 15%;
+    margin-top: 20px;
+
+}
+#connect
+{
+    width: 379px;
+    height: auto;
+    /* margin-right: 10px; */
+    /* border:1px solid black */
+}
+#connect>img{
+    width:100%;
+}
+.connect
+{
+    width: 379px;
+    height:auto;
+    /* margin-right: 10px; */
+    /* border:1px solid black ; */
+    margin-top:20px;
+}
+.connect>img
+{
+    width:100%;
+}
+.mobile
+{
+    height:144px;
+    /* border: 1px solid black; */
+    height:auto;
+    margin-top: 15px;
+    color:#2e2e2e
+}
+.mobile>img{
+    display: block;
+    margin:auto
+}
+#latestnews>h1{
+    margin-left: 50px;
+}
+#imgn7
+{
+    width:80px;
+    width:70px;
+    border-radius: 4px;
+    margin-right:15px;
+}
+#div7
+{
+    border: 1px solid lightgray;
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    color:#2e2e2e
+
+}
+

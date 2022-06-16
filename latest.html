@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/india.css">
+
+    <title>Document</title>
+</head>
+<style>
+    #add_image {
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+
+    }
+
+    #add_data12 {
+        display: block;
+    }
+
+    #add_data12>button {
+        background-color: blueviolet;
+        margin-top: 20px;
+    }
+    #main
+    {
+        position: relative;
+        top:69px;
+    }
+</style>
+
+<body>
+    <div id="navbar"></div>
+   <div id="main">
+  
+    <div id="search_bar">
+        <input id="search_input" type="text" placeholder="seach here...">
+        <button id="button_input" onclick="go()">GO</button>
+    </div>
+    <div id="add_data12">
+        <button onclick="myfunc()">close</button>
+        <img id="add_image"
+            src="https://tpc.googlesyndication.com/simgad/2833014943852202811?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qn2nnRsZ3fKC29qJHsnlDoEHAFz7A"
+            alt="">
+    </div>
+
+    <div id="latestnews">
+        <p style="color:darkgray">Home > Latest News</p>
+        <br>
+        <h1>Latest News</h1>
+        <div id="latest">
+
+            <div class="news" id="div1">
+                <div class="mobile">
+                    <img src="https://rukminim1.flixcart.com/image/312/312/kpmy8i80/mobile/x/q/n/m3-pro-5g-mzb0956in-poco-original-imag3th5e4thsxjt.jpeg?q=70"
+                        alt="">
+                    <h3>POCO F21 pro (sunset) Orange 8GB,128GB....</h3>
+                </div>
+                <div class="mobile">
+                    <img src="https://m.media-amazon.com/images/I/41zL6EeHU7L._SL160_.jpg?downsize=100:*" alt="">
+                    <h3>OPPO F21 Pro (Sunset Orange, 8GB RAM, 128 Storage)
+                        ₹22,999
+                        Amazon</h3>
+                </div>
+                <div class="mobile">
+                    <img src="https://m.media-amazon.com/images/I/31ijp%20BpYKL._SL160_.jpg?downsize=100:*" alt="">
+                    <h3>OPPO Enco Buds Bluetooth True Wireless in Ear Earbuds(TWS) with Mic, 24H Battery Life, Supports
+                        Dolby Atmos Noise Cancellation During Calls,
+                    </h3>
+                </div>
+            </div>
+            <div class="news" id="div2">
+
+            </div>
+            <div class="news" id="div3">
+                <div id="connect">
+                    <img src="https://tpc.googlesyndication.com/simgad/6405123384535618295?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qmDYF0PVvc9izsiRs3rDnUVRDu2Yg"
+                        alt="">
+                    <div class="connect">
+                        <img src="https://tpc.googlesyndication.com/simgad/2400145827476867410?" alt="">
+                        <h3>© AFP
+                            Mumbai batter Sarfaraz Khan has been in stunning form in this year's Ranji Trophy,</h3>
+                    </div>
+                    <div class="connect">
+                        <img src="https://c.ndtvimg.com/2021-05/ojrmdiv8_mumbai-coronavirus-lockdown-reuters_625x300_12_May_21.jpg"
+                            alt="">
+                        <h3>Mumbai Sees 1,000% Rise In Daily Covid Cases Since May 17</h3>
+
+                    </div>
+                    <div class="connect">
+                        <img src="https://c.ndtvimg.com/2019-05/femdd61o_dilip-vengsarkar_625x300_06_May_19.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605"
+                            alt="">
+                        <h3>"Should Have Been Playing For India": Dilip Vengsarkar "Surprised" At Ranji Trophy Star's
+                            Exclusion</h3>
+                    </div>
+                    <div class="connect">
+                        <img src="https://c.ndtvimg.com/2022-06/vggmvhqg_neena-gupta_625x300_09_June_22.jpg" alt="">
+                        <h3>Neena Gupta Enjoys Full Packet Of Chips On Her Solo Trip; Gives Us Major Holiday Goals</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+</body>
+
+</html>
+<script type="module">
+    import navbar from "./component/navbar.js";
+
+    import data from "./component/fetch.js"
+    import appendg from "./component/appendg.js"
+    var data12 = await data("https://api-9630-ndtv.herokuapp.com/api/offbeat")
+    console.log(data12)
+    var container = document.getElementById("div2");
+    appendg(data12, container)
+
+
+
+    document.getElementById('navbar').innerHTML = navbar();
+
+
+</script>
+<script src="scripts/india.js">
+</script>
+<script src="scripts/navbar.js"></script>

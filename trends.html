@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/trend.css">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        font-family:'Roboto', sans-serif;
+        font-weight: 300;
+        
+    }
+    #main
+    {
+        position: relative;
+        top:120px;
+        width:97%;
+        margin: auto;
+
+    }
+    #trend
+    {
+        width:70%;
+        height: auto;
+        /* border: 1px solid black; */
+       
+        font-size: 17px;
+    }
+    #trend1
+    {
+        width:50%;
+        height: 30px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        color:#8b8c8d;
+        margin-bottom: 16px;
+
+    }
+    #trend2
+    {
+        width:70%;
+        height: 30px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        color:#8b8c8d
+
+    }
+    #trend1>p:hover
+    {
+        border-bottom:4px solid blueviolet;
+        color:blueviolet;
+        cursor: pointer;
+    }
+    #trend2>p:hover
+    {
+        color: black;
+        cursor: pointer;
+    }
+    #t
+    {
+        border-bottom:4px solid blueviolet;
+        color:blueviolet;
+        cursor: pointer;
+    }
+    #h1
+    {
+        font-size: 62px;
+        font-weight: 700;
+        margin-bottom:20px;
+    }
+    #add
+    {
+        width: 60%;
+        height: 200px;
+        /* border: 1px solid teal; */
+        border-style: groove;
+        margin: auto;
+       display: flex;
+       justify-content: space-between;
+    }
+    .add
+    {
+        width: 24%;
+        height: 200px;
+        /* border: 1px solid black; */
+
+    }
+    #src
+    {
+        height: 90%;
+        width:100%;
+    }
+    #add>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 102%;
+        /* width:102%; */
+    }
+    #left_right
+    {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .extral
+    {
+        height: auto;
+        width:100%;
+        border: 1px solid lightgray;
+        color:#3177bd;
+        /* background-color: black; */
+        margin-top: 10px;
+    }
+    .extral>img{
+        width: 100%;
+        
+    }
+    #extra
+    {
+        height: auto;
+        width:25%;
+        /* border: 1px solid black;   */
+    }
+
+</style>
+<body>
+
+    <div id="navbar"></div>
+<div id="main">
+   
+    <div id="add">
+        <div class="add">
+            <img src="https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/inspiron-14-5415/media-gallery/notebook-in5415nt-cnb-00000ff090-gy.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=650&qlt=100,0&resMode=sharp2&size=650,402" alt="" id="src">
+        </div>
+        <div class="add">
+            <img src="https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/inspiron-14-5415/media-gallery/notebook-in5415nt-cnb-90000td090-gy.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=559&qlt=100,0&resMode=sharp2&size=559,402" alt="" id="src">
+        </div>
+        <div class="add">
+            <img src="https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/inspiron-14-5415/media-gallery/notebook-in5415nt-cnb-05000ff090-gy.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=582&qlt=100,0&resMode=sharp2&size=582,402" alt="" id="src">
+        </div>
+        <div class="add">
+            <img src="https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/inspiron-14-5415/media-gallery/notebook-in5415nt-cnb-00055rf110-gy.psd?fmt=png-alpha&pscan=auto&scl=1&wid=4339&hei=2877&qlt=100,0&resMode=sharp2&size=4339,2877" alt="" id="src">
+        </div>
+
+    </div>
+   <div id="left_right">
+    <div id="trend">
+        <h1 id="h1">Trending</h1>
+        <div id="trend1">
+            <p id="t">Trending</p>
+            <p>Most Read</p>
+            <p>Most Watched</p>
+            <p>Most Commented</p>
+            
+        </div>
+        <div id="trend2">
+            <p>All</p>
+            <p>News</p>
+            <p>Movies</p>
+            <p>Sprts</p>
+            <p>Business</p>
+            <p>Gadgets</p>
+            <p>Auto</p>
+            <p>Food</p>
+            <p>Khabar</p>
+        </div>
+    
+    </div>
+    <div id="extra">
+        <div class="extral">
+            <img src="https://c.ndtvimg.com/2022-02/j7fd6its_swapna-suresh_625x300_05_February_22.jpg" alt="">
+            <h3>In Kerala Gold Smuggling Case, Accused's New Charge Against Chief Minister</h3>
+        </div>
+        <div class="extral">
+            <img src="https://m.media-amazon.com/images/I/41twooyuQrS._SL160_.jpg?downsize=100:*" alt="">
+            <h3>Redimi Note 10S (Storage super Amoled DisPlay)<br>
+            Rs 12,999</h3>
+        </div>
+        <div class="extral">
+            <img src="https://c.ndtvimg.com/mumbai-police-generic_650_625x300_1530762157699.jpg" alt="">
+            <h3>Mumbai Finance Exec Blackmailed For Lakhs In "Sextortion" Racket: Cops</h3>
+        </div>
+        <div class="extral">
+            <img src="https://c.ndtvimg.com/2022-06/ul5rcnc8_priyanka-chopra_650x300_08_June_22.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350" alt="">
+            <h3>"Who's Hungry?" - Priyanka Chopra Shares Glimpse Of Her NY Restaurant's Kitchen</h3>
+        </div>
+        <div class="extral">
+            <img src="https://c.ndtvimg.com/2022-04/3lk8lf4_avocado-toast_625x300_28_April_22.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350" alt="">
+            <h3>13 Best Toast Recipes: Exciting Toppings to Spruce Up Your Slice of Bread | Easy Toast Recipes</h3>
+        </div>
+        <div class="extral">
+            <img src="https://i.ndtvimg.com/i/2017-01/sarson-ka-saag_620x350_81484297304.jpg" alt="">
+            <h3>15 Best Punjabi Recipes | Easy Punjabi Recipes</h3>
+        </div>
+        <div class="extral">
+            <img src="https://c.ndtvimg.com/2022-04/1ctdbhl8_disha-patani_625x300_30_April_22.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350" alt="">
+            <h3>Disha Patani's Vacation Meal Was This Tasty Japanese Delight</h3>
+        </div>
+        <div class="extral">
+            <img src="https://c.ndtvimg.com/2022-06/9keqopb_anupam-kher-_625x300_08_June_22.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350" alt="">
+            <h3>Anupam Kher Enjoys These Street Food Delicacies in Varanasi; See Pics</h3>
+        </div><div class="extral">
+            <img src="https://c.ndtvimg.com/2022-06/6uf1bmko_avocado-toast_120x90_14_June_22.jpg" alt="">
+            <h3></h3>
+        
+        </div>
+       
+    </div>
+   </div>
+</div>
+   
+
+</body>
+</html>
+<script type="module">
+    import navbar from "./component/navbar.js";
+    document.getElementById('navbar').innerHTML = navbar();
+    import data from "./component/fetch.js"
+    var data23=await data("https://api-9630-ndtv.herokuapp.com/api/trends")
+    import appendt from "./component/appendt.js";
+   var  container=document.getElementById("trend")
+    appendt(data23,container)
+
+</script>

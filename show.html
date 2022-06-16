@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mid
+    {
+        width:60%;
+        border: 1px solid black;
+        margin:auto;
+        margin-top: 40px;
+        color:white;
+        font-family: sans-serif;
+    }
+    #img1
+    {
+      width: 100%;
+    }
+    body
+    {
+        background-color: black;
+    }
+
+</style>
+<body>
+    <div id="mid">
+        
+
+    </div>
+</body>
+</html>
+<script>
+    let arr=JSON.parse(localStorage.getItem("show"))
+    let div=document.createElement("div")
+    let img1=document.createElement("img");
+    img1.setAttribute("id","img1");
+    img1.src=arr.image1 || arr.urlToImage;
+    h3=document.createElement("h3");
+    h3.innerText=arr.newsCont || arr.description;
+    div.append(img1,h3)
+    document.getElementById("mid").append(div)
+</script>
